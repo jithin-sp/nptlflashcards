@@ -25,10 +25,10 @@ function App() {
   if (loading) {
     return (
       <div className="app">
-        <div className="loading-container">Loading...</div>
         <footer className="footer">
           Developed by <a href="https://jithin.tech" target="_blank" rel="noopener noreferrer">Jithin SP</a>
         </footer>
+        <div className="loading-container">Loading...</div>
       </div>
     );
   }
@@ -36,14 +36,14 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <footer className="footer">
+          Developed by <a href="https://jithin.tech" target="_blank" rel="noopener noreferrer">Jithin SP</a>
+        </footer>
         <Routes>
           <Route path="/" element={<HomeScreen questions={questions} />} />
           <Route path="/week/:weekId/:mode" element={<WeekMode questions={questions} />} />
           <Route path="/practice-all/:mode" element={<WeekMode questions={questions} isAllWeeks={true} />} />
         </Routes>
-        <footer className="footer">
-          Developed by <a href="https://jithin.tech" target="_blank" rel="noopener noreferrer">Jithin SP</a>
-        </footer>
       </div>
     </Router>
   );

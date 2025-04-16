@@ -119,7 +119,7 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
         } else {
           setCompleted(true);
         }
-      }, 1500);
+      }, 1000);
     }
   };
   
@@ -170,12 +170,40 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
   
   // Render completion screen if finished
   if (completed) {
+    // If in learn mode, show a "Take Test" button instead of the standard completion screen
+    if (mode === 'learn') {
+      return (
+        <div className="completion-screen fade-in">
+          <h2 className="completion-message">Great job on reviewing the material!</h2>
+          
+          <div className="score">
+            {score} / {currentQuestions.length} ({Math.round((score / currentQuestions.length) * 100)}%)
+          </div>
+          
+          <p className="quote">Ready to test your knowledge like Sherlock Holmes solves a case?</p>
+          
+          <div className="controls">
+            <button className="nav-button" onClick={() => {
+              navigate(`/${isAllWeeks ? 'practice-all' : `week/${weekId}`}/practice`);
+            }}>
+              Take Test
+            </button>
+            
+            <button className="nav-button" onClick={handleBackToHome}>
+              Back to Home
+            </button>
+          </div>
+        </div>
+      );
+    }
+    
     return (
       <CompletionScreen 
         score={score}
         total={currentQuestions.length}
         onRestart={handleRestart}
         onBackToHome={handleBackToHome}
+        mode={mode}
       />
     );
   }
@@ -197,6 +225,11 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
             {" "}• Attempts: {questionProgress.attempts} • Correct: {questionProgress.correct}
           </span>
         )}
+        {mode === 'learn' && (
+          <div className="learn-mode-indicator">
+            📚 Learn Mode - Memorize like a superhero!
+          </div>
+        )}
       </div>
       <div className="progress-bar">
         <div 
@@ -212,6 +245,8 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
           userAnswer={userAnswers[currentIndex]}
           onAnswerSelect={handleAnswerSelect}
           shuffleOptions={mode === 'shuffle'}
+          onSwipeLeft={handleNext}
+          onSwipeRight={handlePrevious}
         />
       </div>
       

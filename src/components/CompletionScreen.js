@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 
-const CompletionScreen = ({ score, total, onRestart, onBackToHome }) => {
+const CompletionScreen = ({ score, total, onRestart, onBackToHome, mode }) => {
   const percentage = Math.round((score / total) * 100);
   const [windowDimension, setWindowDimension] = useState({
     width: window.innerWidth,
@@ -30,11 +30,16 @@ const CompletionScreen = ({ score, total, onRestart, onBackToHome }) => {
   
   // Motivational quotes
   const quotes = [
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "The only way to learn is to keep practicing and making mistakes.",
-    "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
-    "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
-    "Learning never exhausts the mind."
+    "Remember everything like you're Sherlock Holmes solving a case. Your mind palace awaits!",
+    "Memorize this faster than JARVIS processes data. Tony Stark would be proud!",
+    "Your memory needs to be as sharp as Daredevil's senses in Hell's Kitchen.",
+    "Quick! Memorize this like Doctor Strange reading ancient texts before Dormammu arrives!",
+    "Use those brain cells like Captain America uses his shield – with precision and purpose!",
+    "As Yoda would say: Memorize or memorize not, there is no try.",
+    "Remember everything faster than Spider-Man's spider-sense can detect danger!",
+    "If Deadpool can remember all his one-liners, you can remember this material!",
+    "Channel your inner Black Panther and let the knowledge of Wakanda flow through you!",
+    "The Force of memory is strong with this one. Use it, young Padawan!"
   ];
   
   // Randomly select a quote
@@ -64,7 +69,7 @@ const CompletionScreen = ({ score, total, onRestart, onBackToHome }) => {
       
       <div className="controls">
         <button className="nav-button" onClick={onRestart}>
-          Try Again
+          {mode === 'learn' ? 'Review Again' : 'Try Again'}
         </button>
         
         <button className="nav-button" onClick={onBackToHome}>
