@@ -1,0 +1,1816 @@
+{
+  "weak1":[
+    {
+      "id": "pqbYP2ARnhFL.0.5085856874889216",
+      "question": "What does KDD stand for in the context of data mining?",
+      "options": [
+        "Key Data Development",
+        "Knowledge Discovery from Data",
+        "Knowledge Data Design",
+        "Key Data Distribution"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Knowledge Discovery from Data"
+    },
+    {
+      "id": "pqbYP2ARnhFL.1.5583471450259456",
+      "question": "Which of the following does NOT belong to the data preparation phase?",
+      "options": [
+        "Data cleaning",
+        "Data integration",
+        "Data visualization",
+        "Data selection"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Data visualization"
+    },
+    {
+      "id": "pqbYP2ARnhFL.2.5646873690374144",
+      "question": "Which type of data is specifically classified as unstructured?",
+      "options": [
+        "A table of employee records with defined columns.",
+        "Free-text comments collected from customer surveys.",
+        "Data logged in sequential order with timestamps.",
+        "Numerical data organized in a consistent matrix."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Free-text comments collected from customer surveys."
+    },
+    {
+      "id": "pqbYP2ARnhFL.3.5825394274467840",
+      "question": "In real world applications, data can often be a mixture of:",
+      "options": [
+        "Only structured data",
+        "Only unstructured data",
+        "Structured, semistructured, and unstructured data",
+        "Structured and unorganized data"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Structured, semistructured, and unstructured data"
+    },
+    {
+      "id": "pqbYP2ARnhFL.4.4923768902778880",
+      "question": "A car company has collected sales data, customer feedback, and production reports over the past five years in various formats. To analyze total sales by region and model across this period, the data must undergo __________ to consolidate, aggregate, and restructure it for meaningful analysis.",
+      "options": [
+        "Data integration",
+        "Data normalization",
+        "Data transformation",
+        "Data cleaning"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Data transformation"
+    },
+    {
+      "id": "pqbYP2ARnhFL.5.4584565069316096",
+      "question": "Which of the following is an example of how online platforms like Amazon enhance the long tail phenomenon discussed in the lecture?",
+      "options": [
+        "Offering only best-selling items in stock.",
+        "Providing recommendations for less popular books based on user preferences.",
+        "Limiting the variety of products available for faster shipping.",
+        "Only stocking products that have been successful in physical stores."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Providing recommendations for less popular books based on user preferences."
+    },
+    {
+      "id": "pqbYP2ARnhFL.6.4967318528983040",
+      "question": "As discussed in the lecture, in the context of analytics, which of the following terms best represent to \"DSS\"?",
+      "options": [
+        "Data Storage Systems",
+        "Digital Software Solutions",
+        "Decision Support Systems",
+        "Data Security Services"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Decision Support Systems"
+    },
+    {
+      "id": "pqbYP2ARnhFL.7.5034592145244160",
+      "question": "What does ETL stand for in the context of data management?",
+      "options": [
+        "Extract, Transform, Load",
+        "Evaluate, Transfer, Load",
+        "Extract, Test, Load",
+        "Evaluate, Transform, Load"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Extract, Transform, Load"
+    },
+    {
+      "id": "pqbYP2ARnhFL.8.6445062156713984",
+      "question": "As discussed in the lecture, which of the following terms is NOT usually associated with the vocabulary of analytics?",
+      "options": [
+        "Data Warehousing",
+        "Data Governance",
+        "Online Analytical Processing (OLAP)",
+        "Knowledge Discovery in Databases (KDD)"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Data Governance"
+    },
+    {
+      "id": "pqbYP2ARnhFL.9.6552383725764608",
+      "question": "What is an outlier in a data set?",
+      "options": [
+        "A data object that conforms to the general behavior of the data.",
+        "A data object that does not comply with the general behavior or model of the data",
+        "A common occurrence within the data set.",
+        "A data point that represents average behavior."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "A data object that does not comply with the general behavior or model of the data"
+    },
+    {
+      "id": "pqbYP2ARnhFL.10.5864939179212800",
+      "question": "Which of the following is an example of supervised learning?",
+      "options": [
+        "Grouping data points into clusters based on inherent similarities.",
+        "Diagnosing diseases based on labeled medical data.",
+        "Discovering patterns in data without predefined categories.",
+        "Organizing items into groups based on unknown attributes"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Diagnosing diseases based on labeled medical data."
+    },
+    {
+      "id": "pqbYP2ARnhFL.11.4556815554052096",
+      "question": "What is the primary function of a data warehouse?",
+      "options": [
+        "Increases the security of data",
+        "Integrates data from multiple sources",
+        "Optimizes search engine results",
+        "Analyzes data in real-time"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Integrates data from multiple sources"
+    },
+    {
+      "id": "pqbYP2ARnhFL.12.5044861277831168",
+      "question": "In the context of business intelligence, what is the role of clustering?",
+      "options": [
+        "To create data warehouses",
+        "To group customers based on their similarities",
+        "To enhance data visualization",
+        "To manage real-time data"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "To group customers based on their similarities"
+    },
+    {
+      "id": "pqbYP2ARnhFL.13.5694705185062912",
+      "question": "How does data mining contribute to business intelligence?",
+      "options": [
+        "By transforming raw data into meaningful information",
+        "By providing insights from historical and current data",
+        "By ensuring the security of sensitive data",
+        "By automating data storage processes"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "By providing insights from historical and current data"
+    },
+    {
+      "id": "pqbYP2ARnhFL.14.4887694298054656",
+      "question": "In the context of data mining, which of the following best describes the nature of relational databases?",
+      "options": [
+        "They store highly structured data with predefined attributes and semantic meaning",
+        "They store unstructured data such as images, audio, and text.",
+        "They dynamically adjust to various data types and structures without predefined constraints.",
+        "They are specifically designed for organizing large amounts of multimedia content."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "They store highly structured data with predefined attributes and semantic meaning"
+    }
+  ],
+  "weak2": [
+    {
+      "id": "GjEhByLQrMSe.0.5852788112752640",
+      "question": "Data warehouses provide __________ tools for interactive analysis of  multidimensional data of varied granularities.",
+      "options": [
+        "Data mining",
+        "Online Analytical Processing (OLAP)",
+        "Transaction processing",
+        "Data visualization"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Online Analytical Processing (OLAP)"
+    },
+    {
+      "id": "GjEhByLQrMSe.1.6490204578250752",
+      "question": "What was the primary business problem faced by AT&T Long Distance?",
+      "options": [
+        "Inefficient telemarketing campaigns",
+        "Difficulty in acquiring new customers",
+        "Lack of technology for data analysis",
+        "Insufficient funding for marketing"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Difficulty in acquiring new customers"
+    },
+    {
+      "id": "GjEhByLQrMSe.2.5325203289145344",
+      "question": "What is the purpose of data cleaning and integration techniques in the construction of a data warehouse?",
+      "options": [
+        "To enhance the speed of data retrieval.",
+        "To ensure consistency in naming conventions, encoding structures, and attribute measures",
+        "To permanently delete irrelevant data.",
+        "To store data in multiple formats for redundancy."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "To ensure consistency in naming conventions, encoding structures, and attribute measures"
+    },
+    {
+      "id": "GjEhByLQrMSe.3.5659148975341568",
+      "question": "Which of the following best describes the \"nonvolatile\" nature of data in a data warehouse?",
+      "options": [
+        "Data is constantly changing and requires frequent updates",
+        "Data remains stable and is not subject to regular deletions or modifications.",
+        "Data is always accessed for real-time transactions.",
+        "Data is stored temporarily and can be easily altered."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Data remains stable and is not subject to regular deletions or modifications."
+    },
+    {
+      "id": "GjEhByLQrMSe.4.5883594671652864",
+      "question": "An OLTP system usually adopts an __________ data model.",
+      "options": [
+        "Hierarchical",
+        "Entity-Relationship",
+        "Object-Relational",
+        "Network"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Entity-Relationship"
+    },
+    {
+      "id": "GjEhByLQrMSe.5.5289838159331328",
+      "question": "What is the primary characteristic of OLAP system access patterns?",
+      "options": [
+        "Frequent updation and live alteration to the data",
+        "Real-time transaction processing",
+        "Primarily read-only operations",
+        "Atomic transactions"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Primarily read-only operations"
+    },
+    {
+      "id": "GjEhByLQrMSe.6.4820456618590208",
+      "question": "Why is it not recommended to process complex OLAP queries on operational databases?",
+      "options": [
+        "It can increase the risk of security breaches.",
+        "It can lead to data inconsistencies.",
+        "It can significantly degrade the performance of transactional operations.",
+        "Incompatible with operational data structures."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "It can significantly degrade the performance of transactional operations."
+    },
+    {
+      "id": "GjEhByLQrMSe.7.6373150512644096",
+      "question": "Which of the following is a key function of back-end tools and utilities in a data warehouse system?",
+      "options": [
+        "Query optimization",
+        "Data extraction and transformation",
+        "User interface design",
+        "Data visualization"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Data extraction and transformation"
+    },
+    {
+      "id": "GjEhByLQrMSe.8.6230963741261824",
+      "question": "What is a major challenge associated with data loading in large-scale data warehouses?",
+      "options": [
+        "Ensuring data consistency across multiple sources",
+        "Managing distributed loading and performance optimization",
+        "Preventing data loss during the loading process",
+        "Ensuring data privacy and security during the loading process"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Managing distributed loading and performance optimization"
+    },
+    {
+      "id": "GjEhByLQrMSe.9.5102782233706496",
+      "question": "What is the primary difference between an enterprise data warehouse and a data mart?",
+      "options": [
+        "Enterprise data warehouses are more complex to implement and need more technical expertise\nthan data marts",
+        "Data marts are primarily used for strategic decision-making, while enterprise data warehouses are for tactical decisions.",
+        "Enterprise data warehouses provide a comprehensive view of the entire organization's data, while data marts focus on specific business areas.",
+        "Data marts are more expensive to maintain than enterprise data warehouses."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Enterprise data warehouses provide a comprehensive view of the entire organization's data, while data marts focus on specific business areas."
+    },
+    {
+      "id": "GjEhByLQrMSe.10.5296374495576064",
+      "question": "What is a potential drawback of using a virtual warehouse?",
+      "options": [
+        "Increased load on operational databases.",
+        "High implementation costs.",
+        "Limited scalability and performance.",
+        "Difficulty in integrating data from multiple sources"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Increased load on operational databases."
+    },
+    {
+      "id": "GjEhByLQrMSe.11.6422274402418688",
+      "question": "Consider a large-scale healthcare organization with multiple hospitals and clinics. What are the primary benefits of implementing a centralized database management system (DBMS) to manage patient records, medical history, and billing information?",
+      "options": [
+        "Improved data consistency and accuracy across different healthcare facilities, reducing errors\nand inconsistencies in patient records",
+        "Enhanced data security and privacy through robust access controls and encryption to protect sensitive patient information.",
+        "Efficient data retrieval and analysis to support clinical decision-making, research, and regulatory compliance.",
+        "All of the above."
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "All of the above."
+    },
+    {
+      "id": "GjEhByLQrMSe.12.5946356525432832",
+      "question": "A person transferred ₹2000 to his friend via a UPI application to contribute to a weekend trip. Which ACID property ensures that the transaction is either fully completed or completely rolled back?",
+      "options": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Atomicity"
+    },
+    {
+      "id": "GjEhByLQrMSe.13.4965775629090816",
+      "question": "What is the purpose of normalization in a snowflake schema?",
+      "options": [
+        "To improve query performance.",
+        "To reduce data redundancy.",
+        "To increase data security.",
+        "To simplify data loading and transformation"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "To reduce data redundancy."
+    },
+    {
+      "id": "GjEhByLQrMSe.14.6674166617473024",
+      "question": "Which data warehouse schema is typically more efficient for querying due to its simplified structure and less number of joins?",
+      "options": [
+        "Star schema",
+        "Snowflake schema",
+        "Both A & B are equally efficient",
+        "It depends on the specific query workload"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Star schema"
+    }
+  ],
+  "weak3": [
+    {
+      "id": "TZN2HW4Be1DZ.0.4633473036320768",
+      "question": "What is the purpose of the semicolon (;) in SQL?",
+      "options": [
+        "To comment out a line of code",
+        "To declare a variable",
+        "To terminate an SQL statement",
+        "To start a new SQL block"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "To terminate an SQL statement"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.1.6253441184169984",
+      "question": "Consider an IPL_Players table with columns PlayerID, PlayerName, TeamName, and JerseyNumber:In the context of superkeys, candidate keys, and primary keys, which of the following statements\nis true?",
+      "options": [
+        "PlayerID is a candidate key, PlayerName + TeamName is a superkey, and the primary key is the chosen candidate key like PlayerID.",
+        "PlayerID is a superkey, and PlayerName + TeamName is a candidate key because it includes more attributes.",
+        "PlayerName + TeamName is the only superkey, and PlayerID is the primary key because it is numeric.",
+        "Both PlayerID and PlayerName + TeamName are primary keys because they uniquely identify rows."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "PlayerID is a candidate key, PlayerName + TeamName is a superkey, and the primary key is the chosen candidate key like PlayerID."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.2.5613456294674432",
+      "question": "What is the primary purpose of a foreign key in a relational database?",
+      "options": [
+        "To uniquely identify each row in its own table.",
+        "To establish a relationship between two tables by referencing columns in another table.",
+        "To enforce that a column contains only unique values.",
+        "To ensure a table has no duplicate rows."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "To establish a relationship between two tables by referencing columns in another table."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.3.5949488764551168",
+      "question": "Which SQL command would you use to find the total number of matches played by each team in the IPL 2023 season?",
+      "options": [
+        "WHERE",
+        "ORDER BY",
+        "GROUP BY",
+        "COUNT"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "GROUP BY"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.4.5383406572011520",
+      "question": "Which statement about INNER JOIN is correct?",
+      "options": [
+        "Returns all records from the left table and matches records from the right table.",
+        "Returns only matching records from both tables.",
+        "Returns all records from both tables, including non-matching rows.",
+        "Returns all records from the right table and matches records from the left table."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Returns only matching records from both tables."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.5.4542039658594304",
+      "question": "Which of the following best characterizes the primary functionality of a data cube in multidimensional data analysis?",
+      "options": [
+        "It organizes data into rows and columns only.",
+        "It allows for the analysis of data across multiple dimensions or perspectives.",
+        "It stores data in a strictly two-dimensional format.",
+        "It is only applicable for textual data analysis."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "It allows for the analysis of data across multiple dimensions or perspectives."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.6.4846066300616704",
+      "question": "Consider a data cube with dimensions Course, Student, and Semester. Which cuboid represents the apex cuboid?",
+      "options": [
+        "The 0-D cuboid, summarizing the total grades across all students, courses, and semesters.",
+        "The 3-D cuboid, showing data for all students, courses, and semesters.",
+        "The 1-D cuboid, summarizing data for courses only.",
+        "The 2-D cuboid, summarizing data for courses and students."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "The 0-D cuboid, summarizing the total grades across all students, courses, and semesters."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.7.6537221585240064",
+      "question": "Which OLAP operation involves selecting a subcube using multiple dimensions?",
+      "options": [
+        "Roll-up",
+        "Drill-down",
+        "Slice",
+        "Dice"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Dice"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.8.4607844060495872",
+      "question": "In OLAP, the pivoting operation is used to __________ the data dimensions for alternative presentation.",
+      "options": [
+        "Aggregate",
+        "Rotate",
+        "Slice",
+        "Filter"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Rotate"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.9.5560179070861312",
+      "question": "Which normal form requires that there should be no multi-valued attributes in a relation?",
+      "options": [
+        "First Normal Form (1NF)",
+        "Second Normal Form (2NF)",
+        "Third Normal Form (3NF)",
+        "Fourth Normal Form (4NF)"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "First Normal Form (1NF)"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.10.5759372943163392",
+      "question": "In which of the following multidimensional data models is each dimension represented by only one table, and each table contains a set of attributes?",
+      "options": [
+        "Star schema",
+        "Snowflake schema",
+        "Fact constellation schema",
+        "Galaxy schema"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Star schema"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.11.5096199021920256",
+      "question": "Which SQL command removes all rows from a table while retaining the table structure?",
+      "options": [
+        "DELETE",
+        "DROP",
+        "TRUNCATE",
+        "REMOVE"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "TRUNCATE"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.12.6044733959307264",
+      "question": "Which of the following refers to a key with more than one attribute?",
+      "options": [
+        "Composite key",
+        "Compound key",
+        "Foreign key",
+        "Surrogate key"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Composite key"
+    },
+    {
+      "id": "TZN2HW4Be1DZ.13.6227390127144960",
+      "question": "What action does the following SQL command perform?INSERT INTO table_nameVALUES (value1, value2, value3);",
+      "options": [
+        "Updates and removes specific rows from the table",
+        "Inserts a new row with the given values into the table.",
+        "Updates existing rows and inserts new data.",
+        "Retrieves data while inserting a new row"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Inserts a new row with the given values into the table."
+    },
+    {
+      "id": "TZN2HW4Be1DZ.14.4707634236620800",
+      "question": "What is the main objective of database normalization?",
+      "options": [
+        "To reduce data redundancy and improve data integrity",
+        "To optimize query performance through indexing",
+        "To enhance the database design",
+        "To convert data into a non-relational format"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "To reduce data redundancy and improve data integrity"
+    }
+  ],
+  "weak4": [
+    {
+      "id": "Ii8B7TQ8TPkW.0.6686078977703936",
+      "question": "____ refers to the process of identifying customers who are at risk of discontinuing their service subscription.",
+      "options": [
+        "Customer retention",
+        "Customer survival",
+        "Customer churn",
+        "Customer attrition"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Customer churn"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.1.5733743967338496",
+      "question": "What does the \"half-life period\" in customer behavior refer to?",
+      "options": [
+        "The rate at which a business acquires new customers",
+        "The time it takes for a customer's behavior to change",
+        "The period when customers no longer require any service",
+        "The time it takes for a customer segment to lose half of its customers"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "The time it takes for a customer segment to lose half of its customers"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.2.5298619085750272",
+      "question": "What is the formula for survival at time S(t) in customer churn analysis?",
+      "options": [
+        "S(t) = 1 - h(t)",
+        "S(t) = S(t - 1) * h(t)",
+        "S(t) = S(t - 1) * (1 - h(t - 1))",
+        "S(t) = h(t) * (1 - S(t - 1))"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "S(t) = S(t - 1) * (1 - h(t - 1))"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.3.5990876210266112",
+      "question": "How does hazard impact survival in the context of customer retention?",
+      "options": [
+        "Survival increases when hazard decreases",
+        "Survival decreases when hazard increases",
+        "Hazard has no impact on survival",
+        "Hazard and survival are directly proportional"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Survival decreases when hazard increases"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.4.6509306478854144",
+      "question": "What is the purpose of calculating Customer Lifetime Value (CLV) at an individual customer level?",
+      "options": [
+        "To analyze the overall revenue trends of a customer over the course of a year.",
+        "To assess the financial value of a customer over their lifetime to the firm",
+        "To estimate the total revenue generated by a customer over time",
+        "To evaluate the contribution of a customer to long-term profitability"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "To assess the financial value of a customer over their lifetime to the firm"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.5.4539832280285184",
+      "question": "The calculation of Customer Lifetime Value (CLV) primarily depends on:",
+      "options": [
+        "Historical data and past customer behavior",
+        "Projected sales data for the next year",
+        "Competitor data and market trends",
+        "Customer feedback and survey data"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Historical data and past customer behavior"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.6.6654625489354752",
+      "question": "Which following factor is used in the CLV formula to adjust the probability of a customer remaining active over time?",
+      "options": [
+        "Customer loyalty rate",
+        "Interest rate",
+        "Survival rate",
+        "Acquisition cost"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Survival rate"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.7.5512667907751936",
+      "question": "In January 2024, an online magazine platform in India with 100,000 active subscribers experienced 7,500 cancellations. The platform identifies 18,000 subscribers at risk of cancelling due to lower engagement with the content and recent pricing changes. What is the hazard probability of a subscriber cancelling their subscription?",
+      "options": [
+        "0.35",
+        "0.42",
+        "0.28",
+        "0.58"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "0.42"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.8.6259233887092736",
+      "question": "In customer analytics, which of the following best defines Churn Rate?",
+      "options": [
+        "The percentage of customers who upgrade their service",
+        "The rate of customers who cancel their subscriptions during a given period",
+        "The rate at which new customers are acquired",
+        "The percentage of customers who renew their subscriptions"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The rate of customers who cancel their subscriptions during a given period"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.9.4814724045209600",
+      "question": "How does survival analysis help in customer retention?",
+      "options": [
+        "By predicting the future value of a customer",
+        "By understanding when a customer is likely to leave or migrate to a new segment",
+        "By determining the exact revenue a customer generates",
+        "By forecasting the product preferences of customers"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "By understanding when a customer is likely to leave or migrate to a new segment"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.10.6003171493675008",
+      "question": "The area under a customer retention curve represents the average customer lifetime for the period of time in the curve.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "True"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.11.6230889518858240",
+      "question": "Which of the following best describes a bathtub-shaped hazard function?",
+      "options": [
+        "A function that exhibits a constant rate of increase or decrease over time.",
+        "A function that initially increases, then levels off, and finally declines.",
+        "A function that starts high, declines, and then increases again.",
+        "A function that fluctuates randomly without a clear trend."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "A function that starts high, declines, and then increases again."
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.12.4823514635304960",
+      "question": "If a customer has survived until time t, what does the hazard probability at time t describe?",
+      "options": [
+        "The likelihood that the customer will make a purchase between time t and t+1",
+        "The risk of the customer leaving before time t+1",
+        "The total number of customers remaining at time t+1",
+        "The likelihood of the customer upgrading to a new product at time t+1"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The risk of the customer leaving before time t+1"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.13.6451103195987968",
+      "question": "Which of the following statements is true about the population at risk in the context of survival analysis?",
+      "options": [
+        "The population at risk includes only those customers who have left by time t",
+        "The population at risk includes all customers who have been active up until time t",
+        "The population at risk includes customers whose tenure is greater than or equal to t, even if they stopped at time t",
+        "The population at risk excludes customers who stopped before time t"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "The population at risk includes customers whose tenure is greater than or equal to t, even if they stopped at time t"
+    },
+    {
+      "id": "Ii8B7TQ8TPkW.14.4611012001529856",
+      "question": "Which of the following is a key characteristic of a survival curve compared to a retention curve?",
+      "options": [
+        "The survival curve increases or stays flat over time.",
+        "The survival curve is smoother and always decreases, even if it flattens at times.",
+        "The survival curve shows fluctuations, just like the retention curve.",
+        "The survival curve is based on the number of customers retained at each time point."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The survival curve is smoother and always decreases, even if it flattens at times."
+    }
+  ],
+  "weak5": [
+    {
+      "id": "fqpt7Vbow8Wb.0.5795956115636224",
+      "question": "Which of the following options best represents key dimensions of data quality?",
+      "options": [
+        "Accuracy, Timeliness, Availability",
+        "Timeliness, Availability, Consistency",
+        "Availability, Consistency, Accuracy",
+        "Timeliness, Accuracy, Consistency"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Timeliness, Accuracy, Consistency"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.1.5173757222584320",
+      "question": "Which data preprocessing method divides numerical data into finite intervals and assigns labels?",
+      "options": [
+        "Normalization",
+        "Discretization",
+        "Compression",
+        "Scaling"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Discretization"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.2.6134527649382400",
+      "question": "What does a high Variance Inflation Factor (VIF) value signify in regression analysis?",
+      "options": [
+        "Low multicollinearity",
+        "High multicollinearity",
+        "No multicollinearity",
+        "Perfect independence"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "High multicollinearity"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.3.5893678969651200",
+      "question": "Which term describes a systematic error that consistently skews measurements away from the\ntrue or actual value?",
+      "options": [
+        "Bias",
+        "Noise",
+        "Precision",
+        "Accuracy"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Bias"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.4.6186299118059520",
+      "question": "Which technique ensures that every data record is systematically included in the test set exactly\nonce across multiple iterations, while the remaining data is used for training?",
+      "options": [
+        "Holdout Method",
+        "Random Subsampling",
+        "Cross-validation",
+        "Bootstrap"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Cross-validation"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.5.5288610822094848",
+      "question": "Identify the pair of techniques that effectively reduce the dimensionality or size of a dataset\nwithout losing significant information:",
+      "options": [
+        "Data cleaning and Data sampling",
+        "Data compression and Data sampling",
+        "Data compression and Data cleaning",
+        "Data integration and Data cleaning"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Data compression and Data sampling"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.6.4713915609513984",
+      "question": "A team in India’s Prime Volleyball League wants to predict the revenue generated from ticket\nsales for an upcoming match based on factors like venue capacity and past ticket sales. Which\nmethod should they use?",
+      "options": [
+        "Regression analysis",
+        "Classification",
+        "Clustering",
+        "Reinforcement Learning"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Regression analysis"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.7.6189310913544192",
+      "question": "Multicollinearity in regression analysis is generally associated with all of the following except:",
+      "options": [
+        "Increased standard errors of regression coefficients.",
+        "Challenges in isolating the effects of individual predictors.",
+        "Enhanced statistical power (reduced p-values) for coefficient tests.",
+        "Instability in coefficient estimates under data perturbations."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Enhanced statistical power (reduced p-values) for coefficient tests."
+    },
+    {
+      "id": "fqpt7Vbow8Wb.8.5636773571461120",
+      "question": "In a regression analysis, which metric quantifies the proportion of the total variance in the\ndependent variable explained by the model?",
+      "options": [
+        "Adjusted R-squared",
+        "Mean squared error",
+        "Root mean squared error",
+        "Coefficient of determination"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Coefficient of determination"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.9.6403182215823360",
+      "question": "In a linear regression model, the method of Ordinary Least Squares aims to:",
+      "options": [
+        "Minimize the squared differences between observed and predicted values",
+        "Maximize the squared differences between observed and predicted values",
+        "Minimize the absolute differences between observed and predicted values",
+        "Maximize the absolute differences between observed and predicted values"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Minimize the squared differences between observed and predicted values"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.10.6050332080078848",
+      "question": "Which combination best describes the sources of prediction error in a machine learning model,\nsuch as y^=f(x)y^=f(x)\\hat{y}  = f(x)?\n         MathJax.Hub.Typeset();",
+      "options": [
+        "Test data variation, Model overfitting, and Regularization error",
+        "Reducible error, Irreducible error, and Test data variation",
+        "Data normalization, Model generalization, and Reducible error",
+        "Regularization, Overfitting, and Feature selection"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Reducible error, Irreducible error, and Test data variation"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.11.5608431266824192",
+      "question": "What does high variance in a machine learning model indicate?",
+      "options": [
+        "The model is highly sensitive to small variations in the input features.",
+        "The model is robust to small changes in the input data.",
+        "The model perfectly captures the relationship between inputs and outputs.",
+        "The model has difficulty capturing any correlation between inputs and outputs."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "The model is highly sensitive to small variations in the input features."
+    },
+    {
+      "id": "fqpt7Vbow8Wb.12.5649978565853184",
+      "question": "Identify the incorrect statement regarding collinearity in a regression context:",
+      "options": [
+        "High collinearity can lead to unstable coefficient estimates.",
+        "A high degree of correlation among predictors indicates collinearity.",
+        "Collinearity increases the significance of predictors as shown by higher t-statistics.",
+        "Correlation analysis of predictors can help identify potential collinearity."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Collinearity increases the significance of predictors as shown by higher t-statistics."
+    },
+    {
+      "id": "fqpt7Vbow8Wb.13.4861495920295936",
+      "question": "A weather prediction model consistently underestimates the amount of rainfall because it\noversimplifies the relationship between atmospheric features and precipitation. This is an\nexample of a model with:",
+      "options": [
+        "High variance",
+        "High bias",
+        "Overfitting tendencies",
+        "Insufficient regularization"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "High bias"
+    },
+    {
+      "id": "fqpt7Vbow8Wb.14.6487340573261824",
+      "question": "The metric that calculates the average squared difference between the predicted and actual values\nis known as ________.",
+      "options": [
+        "Least Squared Error (LSE)",
+        "Mean Squared Error (MSE)",
+        "Mean Absolute Error (MAE)",
+        "Root Mean Squared Error (RMSE)"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Mean Squared Error (MSE)"
+    }
+  ],
+  "weak6": [
+    {
+      "id": "gwkc9MHlHUZt.0.6193601367769088",
+      "question": "The formula is used to compute which performance metric in\nTP+TNTP+TN+FP+FNTP+TNTP+TN+FP+FN\n\\frac{TP + TN}\n{TP + TN + FP + FN}\n\nclassification?\n         MathJax.Hub.Typeset();",
+      "options": [
+        "Accuracy",
+        "Error Rate",
+        "Precision",
+        "Recall"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Accuracy"
+    },
+    {
+      "id": "gwkc9MHlHUZt.1.6297522195136512",
+      "question": "During a cricket match, Hotstar’s \"Selfie with an Old Cricket Bat\" campaign targets 30%\nof college students and achieves an 8% subscription rate. Predictive analytics targeting\nthe top 30% achieves a 16% subscription rate. What is the lift achieved?",
+      "options": [
+        "1.5",
+        "2.0",
+        "2.5",
+        "3.0"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "2.0"
+    },
+    {
+      "id": "gwkc9MHlHUZt.2.6502334220206080",
+      "question": "In a study on water quality, a classifier predicts whether water is contaminated. Here’s the\nconfusion matrix for contaminated = yes and contaminated = no.\nWhat is the specificity of the classifier?",
+      "options": [
+        "96.84%",
+        "97.12%",
+        "98.01%",
+        "97.92%"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "96.84%"
+    },
+    {
+      "id": "gwkc9MHlHUZt.3.5273320738521088",
+      "question": "A car manufacturer wants to predict customer satisfaction based on survey data, but the\nresponses are noisy and have irrelevant details. How does this noise affect the prediction\nmodel?",
+      "options": [
+        "It increases the size of the dataset",
+        "It increases the complexity of the model",
+        "It provides irrelevant information to the model",
+        "It improves the accuracy of predictions"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "It provides irrelevant information to the model"
+    },
+    {
+      "id": "gwkc9MHlHUZt.4.4640060157198336",
+      "question": "A movie recommendation platform suggests a lot of movies to its users, but many of the\nrecommended movies are not relevant to the user’s genre taste. This would represent:",
+      "options": [
+        "High recall, Low precision",
+        "High recall, High precision",
+        "Low recall, High precision",
+        "Low recall, Low precision"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "High recall, Low precision"
+    },
+    {
+      "id": "gwkc9MHlHUZt.5.5509262971764736",
+      "question": "Which technique is known to enhance the accuracy of a classifier trained on imbalanced\ndata without modifying the base model?",
+      "options": [
+        "Random undersampling",
+        "Ensemble techniques",
+        "Data augmentation",
+        "Model-specific cost-sensitive learning"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Ensemble techniques"
+    },
+    {
+      "id": "gwkc9MHlHUZt.6.5434882912681984",
+      "question": "Identify two models that are considered classic linear classifiers:",
+      "options": [
+        "Logistic regression, K-Nearest Neighbors",
+        "Decision tree, Random forest",
+        "Perceptron, Logistic regression",
+        "Decision tree, Neural networks"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Perceptron, Logistic regression"
+    },
+    {
+      "id": "gwkc9MHlHUZt.7.6020040464269312",
+      "question": "Which aspect does the F-measure focus on in the evaluation of classification models?",
+      "options": [
+        "The computational speed during prediction",
+        "The balance between precision and recall",
+        "The simplicity of the decision boundary",
+        "The accuracy of the confusion matrix"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The balance between precision and recall"
+    },
+    {
+      "id": "gwkc9MHlHUZt.8.5427591484276736",
+      "question": "In a weather forecasting system, RMSE is used to assess the model’s accuracy. What does\nit measure?",
+      "options": [
+        "The computational resources required for prediction",
+        "The number of days included in the forecast dataset",
+        "The relationship between temperature and humidity variables",
+        "The average error in predicted and observed weather conditions"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "The average error in predicted and observed weather conditions"
+    },
+    {
+      "id": "gwkc9MHlHUZt.9.5162525010690048",
+      "question": "To ensure an equal number of positive and negative tuples in the training dataset, which\ntechnique involves replicating the positive tuples?",
+      "options": [
+        "Threshold moving",
+        "Ensemble techniques",
+        "Undersampling",
+        "Oversampling"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Oversampling"
+    },
+    {
+      "id": "gwkc9MHlHUZt.10.5039702032252928",
+      "question": "Which of the following is part of the learning step in classification?",
+      "options": [
+        "Constructing a classification model",
+        "Applying the model to test data",
+        "Estimating the model's accuracy",
+        "Evaluating the model's performance"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Constructing a classification model"
+    },
+    {
+      "id": "gwkc9MHlHUZt.11.5262971612168192",
+      "question": "Using the provided ROC curves for models M1M1M_1 and M2M2M_2, identify the model with higher accuracy.                \n         MathJax.Hub.Typeset();",
+      "options": [
+        "Both models are equally accurate",
+        "M1M1M_1\n         MathJax.Hub.Typeset();",
+        "Accuracy cannot be assessed from this curve",
+        "M2M2M_2\n         MathJax.Hub.Typeset();"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "M1M1M_1\n         MathJax.Hub.Typeset();"
+    },
+    {
+      "id": "gwkc9MHlHUZt.12.5353407198527488",
+      "question": "The term \"reducible error\" in classification refers to:",
+      "options": [
+        "Error that can be reduced through improved learning approaches",
+        "Error caused by the data collection process",
+        "Error due to uncontrollable randomness",
+        "Error that remains fixed regardless of the model used"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Error that can be reduced through improved learning approaches"
+    },
+    {
+      "id": "gwkc9MHlHUZt.13.4842246145310720",
+      "question": "What does the formula (FP+FN) / (P+N) represent in classification metrics?",
+      "options": [
+        "Specificity",
+        "Sensitivity",
+        "Accuracy",
+        "Error rate"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Error rate"
+    },
+    {
+      "id": "gwkc9MHlHUZt.14.4923109843402752",
+      "question": "Identify the technique that is NOT used for classification:",
+      "options": [
+        "Logistic Regression",
+        "Quadratic Discriminant Analysis",
+        "Random Forest",
+        "DBSCAN"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "DBSCAN"
+    }
+  ],
+  "weak7": [
+    {
+      "id": "EVKtmUc92L9w.0.6358105896517632",
+      "question": "___________ refers to the process of learning decision trees from training tuples that have class labels.",
+      "options": [
+        "Decision tree construction",
+        "Decision tree induction",
+        "Rule-based learning",
+        "Information gain"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Decision tree induction"
+    },
+    {
+      "id": "EVKtmUc92L9w.1.5528589099859968",
+      "question": "The greedy approach employed by CART for constructing decision trees follows a ___________ method.",
+      "options": [
+        "Bottom-up recursive divide-and-conquer",
+        "Top-down recursive divide-and-conquer",
+        "Bottom-up non-recursive divide-and-conquer",
+        "Top-down non-recursive divide-and-conquer"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Top-down recursive divide-and-conquer"
+    },
+    {
+      "id": "EVKtmUc92L9w.2.6356361972023296",
+      "question": "Which technique combines predictions from several models, each trained on bootstrapped versions of the dataset, to improve generalization?",
+      "options": [
+        "Decision tree pruning",
+        "Ridge regression",
+        "Recursive feature elimination",
+        "Bootstrap aggregation (bagging)"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Bootstrap aggregation (bagging)"
+    },
+    {
+      "id": "EVKtmUc92L9w.3.6468598325837824",
+      "question": "How does a binary decision tree handle a discrete-valued attribute A during dataset splitting?",
+      "options": [
+        "By forming two branches: A ≤ split_point and A > split_point.",
+        "By creating one branch for each distinct value of A. A ∈ SA, where SA",
+        "By applying a test A ∈ SA, where SA is a subset of values of A.",
+        "None of the above"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "By applying a test A ∈ SA, where SA is a subset of values of A."
+    },
+    {
+      "id": "EVKtmUc92L9w.4.6602652576645120",
+      "question": "In a decision tree for recommending movies, what does each branch represent?",
+      "options": [
+        "A movie title",
+        "The outcome of a test, like favourite director",
+        "A test on an attribute, such as user age",
+        "An unknown user preference"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The outcome of a test, like favourite director"
+    },
+    {
+      "id": "EVKtmUc92L9w.5.6060550562250752",
+      "question": "The primary goal of tree pruning in decision tree algorithms is to _______ by _______ the tree, thus avoiding _______.",
+      "options": [
+        "Improve performance, growing, underfitting",
+        "Increase complexity, expanding, overfitting",
+        "Prevent overfitting, simplifying, overfitting",
+        "Enhance accuracy, deepening, training bias"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Prevent overfitting, simplifying, overfitting"
+    },
+    {
+      "id": "EVKtmUc92L9w.6.4517491487801344",
+      "question": "In the post-pruning of a decision tree, the leaf node is assigned the most frequent class label among the subtree being replaced.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "True"
+    },
+    {
+      "id": "EVKtmUc92L9w.7.6578962241683456",
+      "question": "Which of the following best describes how models are handled in the bagging method?",
+      "options": [
+        "Weights are assigned randomly",
+        "All models receive equal weight",
+        "Models are weighted based on their performance",
+        "More recent models are given more importance"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "All models receive equal weight"
+    },
+    {
+      "id": "EVKtmUc92L9w.8.5431987735625728",
+      "question": "Given two equally represented classes in a dataset, what is the entropy of the system?",
+      "options": [
+        "0",
+        "1",
+        "Infinite",
+        "-1"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "1"
+    },
+    {
+      "id": "EVKtmUc92L9w.9.4813281993162752",
+      "question": "Which of these statements is incorrect about Random Forests?",
+      "options": [
+        "Random forests use bagging and random selection of features at each node to train decision trees.",
+        "A Random Forest model is built from many decision trees, and each tree is trained using different random samples of data and features.",
+        "The number of features chosen at each split is a critical factor in determining the success of the Random Forest.",
+        "Random Forests accuracy is determined by the individual decision trees' accuracy and their mutual dependence."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "The number of features chosen at each split is a critical factor in determining the success of the Random Forest."
+    },
+    {
+      "id": "EVKtmUc92L9w.10.6663119709929472",
+      "question": "Given the expression,\n\t\t−∑vj=1|Dj||D|×log2(|Dj||D|)−∑vj=1|Dj||D|×log2⁡(|Dj||D|)- \\underset{j=1}{\\overset{v}{\\sum}} \\frac{|D_j|}{|D|} \\times \\log_2 \\left( \\frac{|D_j|}{|D|} \\right)which of the following does it represent?\n         MathJax.Hub.Typeset();",
+      "options": [
+        "Gini(D)",
+        "Gain (A)",
+        "SplitInfoA(D)",
+        "GainRatio(A)"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "SplitInfoA(D)"
+    },
+    {
+      "id": "EVKtmUc92L9w.11.4601940376289280",
+      "question": "Common techniques for handling imbalanced data in classification tasks include _______, the minority class and _______, the majority class",
+      "options": [
+        "Oversampling, Undersampling",
+        "Under sampling, Oversampling",
+        "Oversampling, Random Sampling",
+        "SMOTE, Undersampling"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Oversampling, Undersampling"
+    },
+    {
+      "id": "EVKtmUc92L9w.12.6695698748145664",
+      "question": "Imagine you're analyzing the purchase behavior of customers on a popular online store during a seasonal sale. You want to assess the Gini indices for customer actions after splitting by the \"Purchase Category\" feature.Node 1 (left child): Out of 30 customers, 15 added items to the cart but didn’t purchase (\"No Purchase\") & 15 completed their purchase (\"Purchase\").Node 2 (right child): Out of 70 customers, 30 abandoned their cart (\"No Purchase\") & 40 went ahead and purchased the items (\"Purchase\").Which option has the correct Gini indices for the child nodes?",
+      "options": [
+        "Gini index for Node 1: 0.500, Gini index for Node 2: 0.428",
+        "Gini index for Node 1: 0.375, Gini index for Node 2: 0.370",
+        "Gini index for Node 1: 0.400, Gini index for Node 2: 0.375",
+        "Gini index for Node 1: 0.400, Gini index for Node 2: 0.500"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Gini index for Node 1: 0.500, Gini index for Node 2: 0.428"
+    },
+    {
+      "id": "EVKtmUc92L9w.13.5929080136925184",
+      "question": "In a customer satisfaction prediction model, which of the following is an advantage of decision trees over linear regression?",
+      "options": [
+        "Decision trees are less affected by outliers.",
+        "Decision trees are easier to explain and interpret.",
+        "Decision trees require the creation of dummy variables for qualitative predictors.",
+        "Decision trees are more accurate in predicting continuous outcomes."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Decision trees are easier to explain and interpret."
+    },
+    {
+      "id": "EVKtmUc92L9w.14.5136137939582976",
+      "question": "In building a decision tree for classifying customers based on their purchase behaviors, which of the following heuristics are typically used for selecting the best-split criterion?",
+      "options": [
+        "Information gain, Gain ratio, Gini impurity",
+        "Information gain, Gini impurity, Residual sum of squares",
+        "Gain ratio, Residual sum of squares, Entropy",
+        "Precision, Gini impurity, Information gain"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Information gain, Gain ratio, Gini impurity"
+    }
+  ],
+  "weak8": [
+    {
+      "id": "H8erb3Saoa2c.0.4762714524614656",
+      "question": "In a RandomForestClassifier, what does setting n_estimators=100 mean?",
+      "options": [
+        "The number of samples used for each tree",
+        "The number of trees in the forest",
+        "The number of features considered at each split",
+        "The maximum depth of each tree"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The number of trees in the forest"
+    },
+    {
+      "id": "H8erb3Saoa2c.1.5857327171764224",
+      "question": "Imagine you have a decision tree that perfectly fits your training data but performs poorly on test data. What technique can help address this issue?",
+      "options": [
+        "Increasing the tree depth.",
+        "Growing additional branches on the tree",
+        "Adding more features to the dataset.",
+        "Applying pruning to avoid overfitting."
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Applying pruning to avoid overfitting."
+    },
+    {
+      "id": "H8erb3Saoa2c.2.5965033845030912",
+      "question": "If you want to visualize the decision-making process of a decision tree x in scikit-learn, which function would you use?",
+      "options": [
+        "tree.plot_tree(x)",
+        "tree.evaluate_tree(x)",
+        "tree.train_tree(x)",
+        "tree.prune_tree(x)"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "tree.plot_tree(x)"
+    },
+    {
+      "id": "H8erb3Saoa2c.3.6078660560289792",
+      "question": "Using scikit-learn, you generate a classification report to evaluate a model predicting exam grade categories. Which of the following metrics is NOT included in the report?",
+      "options": [
+        "Precision",
+        "Recall",
+        "F1-score",
+        "Mean Squared Error"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Mean Squared Error"
+    },
+    {
+      "id": "H8erb3Saoa2c.4.4778556779921408",
+      "question": "In a Random Forest classifier, what function does the Gini criterion serve?",
+      "options": [
+        "To measure the prediction accuracy of the forest.",
+        "To identify the most important features for classification.",
+        "To determine the best feature for splitting at each node in a decision tree.",
+        "To calculate the purity of the final node."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "To determine the best feature for splitting at each node in a decision tree."
+    },
+    {
+      "id": "H8erb3Saoa2c.5.5713575857881088",
+      "question": "What action does rf.fit (X_train, Y_train) perform when working with a Random Forest\nclassifier in scikit-learn?",
+      "options": [
+        "It selects the best features for the training data",
+        "It trains the Random Forest model using the provided training data",
+        "It predicts the target values for a new set of inputs.",
+        "It calculates the training data accuracy."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "It trains the Random Forest model using the provided training data"
+    },
+    {
+      "id": "H8erb3Saoa2c.6.5318107113979904",
+      "question": "You are using the make_classification function from scikit-learn to generate a dataset for\npredicting whether graduate level students will pass or fail a course. The dataset includes\nfeatures such as hours of study, previous grades, and mental health factors. What does the\nn_samples parameter control in this function?",
+      "options": [
+        "The number of features (e.g., study hours, grades, mental health factors).",
+        "The number of classes (e.g., Pass/Fail) in the dataset.",
+        "The number of data points (students) to be generated, including all their characteristics.",
+        "The degree of noise in the dataset, such as random errors in student data."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "The number of data points (students) to be generated, including all their characteristics."
+    },
+    {
+      "id": "H8erb3Saoa2c.7.4652480430866432",
+      "question": "What function does ccp_alpha serve in decision tree pruning in scikit-learn?",
+      "options": [
+        "Defines the minimum number of leaf nodes required.",
+        "Controls the number of samples required to split a node",
+        "Sets the threshold that helps decide which nodes to prune based on cost complexity.",
+        "Determines the maximum depth of the tree."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Sets the threshold that helps decide which nodes to prune based on cost complexity."
+    },
+    {
+      "id": "H8erb3Saoa2c.8.6753669431689216",
+      "question": "When using the roc_curve function from sklearn.metrics, which of the following\nstatements is true?",
+      "options": [
+        "The roc_curve function computes the precision-recall curve for binary\nclassification models.",
+        "The roc_curve function requires predicted probabilities or decision function scores as inputs, not just class labels.",
+        "The roc_curve function can be used to evaluate multi-class classification models without modifications.",
+        "The roc_curve function returns the Receiver Operating Characteristic (ROC) curve\nplot by default."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "The roc_curve function requires predicted probabilities or decision function scores as inputs, not just class labels."
+    },
+    {
+      "id": "H8erb3Saoa2c.9.5705610471931904",
+      "question": "In NumPy, what is the output of the np.shape function when applied to an array?",
+      "options": [
+        "The data type of the array",
+        "A tuple representing the size of each dimension of the array.",
+        "The number of dimensions of the array.",
+        "The total number of elements in the array"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "A tuple representing the size of each dimension of the array."
+    },
+    {
+      "id": "H8erb3Saoa2c.10.4899944668856320",
+      "question": "Which of the following best describes the difference between classification and regression trees in the CART algorithm?",
+      "options": [
+        "Classification trees predict continuous variables, while regression trees predict\ncategorical variables.",
+        "Regression trees predict categorical variables, while classification trees predict\ncontinuous variables.",
+        "Classification trees predict categorical variables, while regression trees predict\ncontinuous variables.",
+        "Regression trees are computationally expensive, while classification trees are\ncomputationally inexpensive."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Classification trees predict categorical variables, while regression trees predict\ncontinuous variables."
+    },
+    {
+      "id": "H8erb3Saoa2c.11.5316035698229248",
+      "question": "What is the role of entropy in decision trees?",
+      "options": [
+        "It measures the accuracy of the tree's predictions",
+        "It determines the optimal number of splits in the tree",
+        "It quantifies the disorder or impurity in a node",
+        "It calculates the variance of the data in each node"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "It quantifies the disorder or impurity in a node"
+    },
+    {
+      "id": "H8erb3Saoa2c.12.6039800635719680",
+      "question": "You are creating a model to identify spam emails that you receive in your college mail ID. Which of the following defines a False Positive (FP) in this context?",
+      "options": [
+        "An email correctly identified as not spam",
+        "An email predicted as not spam that is actually spam",
+        "An email predicted as spam that is actually not spam",
+        "An email correctly identified as spam"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "An email predicted as spam that is actually not spam"
+    },
+    {
+      "id": "H8erb3Saoa2c.13.6101503377408000",
+      "question": "If the true positive value is 20 and the false negative value is 5, what is the recall score\nfor the classification model?",
+      "options": [
+        "0.8",
+        "0.9",
+        "0.7",
+        "None of the above"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "0.8"
+    },
+    {
+      "id": "H8erb3Saoa2c.14.5433081492668416",
+      "question": "Which method is used to evaluate a model by splitting the data into multiple subsets?",
+      "options": [
+        "Gradient Descent",
+        "Cross-validation",
+        "Principal Component Analysis",
+        "Regularization"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Cross-validation"
+    }
+  ],
+  "weak9":[
+    {
+      "id": "tXkGH5J4Pr6p.0.4791979693572096",
+      "question": "Which of the following statements is NOT true about clustering algorithms?",
+      "options": [
+        "K-medoids algorithm uses actual data points as cluster representatives, while K-modes algorithm employs modes to assess similarity in categorical data.",
+        "K-means algorithm calculates the mean of points within a cluster to determine the centroid, while K-modes algorithm utilizes modes to evaluate similarity in categorical data.",
+        "K-medoids algorithm is generally more robust to outliers and noise compared to K-means algorithm.",
+        "The K-means algorithm always produces better results than K-medoids for all types of datasets."
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "The K-means algorithm always produces better results than K-medoids for all types of datasets."
+    },
+    {
+      "id": "tXkGH5J4Pr6p.1.5966056407957504",
+      "question": "Which of the following statements is true about the agglomerative hierarchical clustering method?",
+      "options": [
+        "Agglomerative hierarchical clustering follows a top-down approach, starting with all objects in one cluster and splitting them iteratively.",
+        "In agglomerative hierarchical clustering, each data point starts as an individual cluster, and clusters are merged iteratively",
+        "The merging process in agglomerative clustering is random and does not depend on distance measures.",
+        "Agglomerative hierarchical clustering requires exactly 𝑛 + 1iterations to form the final clustering structure."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "In agglomerative hierarchical clustering, each data point starts as an individual cluster, and clusters are merged iteratively"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.2.5375824822272000",
+      "question": "Which hierarchical clustering method computes all pairwise dissimilarities between the\nobservations in cluster A and the observations in cluster B, and records the smallest of\nthese dissimilarities?",
+      "options": [
+        "Single linkage",
+        "Average linkage",
+        "Complete linkage",
+        "Centroid linkage"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Single linkage"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.3.6248118360735744",
+      "question": "A dendrogram in hierarchical clustering is a __________ representation that shows how clusters are merged at different levels.",
+      "options": [
+        "linear",
+        "tree-like",
+        "tabular",
+        "circular"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "tree-like"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.4.5577683830833152",
+      "question": "________ is an unsupervised learning algorithm that groups data points into clusters based on similarity.",
+      "options": [
+        "Linear Regression",
+        "K-Means Clustering",
+        "Decision Tree",
+        "Logistic Regression"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "K-Means Clustering"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.5.6268950831169536",
+      "question": "A data scientist is working with a dataset where the number of fraudulent transactions is\nsignificantly lower than the number of legitimate transactions. Which technique would be\nmost suitable to handle this class imbalance?",
+      "options": [
+        "PCA",
+        "SMOTE",
+        "Decision Tree",
+        "t-SNE"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "SMOTE"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.6.5578684717596672",
+      "question": "In a 3-dimensional space represented by coordinates (x, y, z), two cluster centroids, A and B, have coordinates A(1, 5, 8) and B (7, 3, 2). Calculate the Euclidean distance between these centroids to determine their dissimilarity. Round your answer to two decimal places.",
+      "options": [
+        "8.72 units",
+        "7.11 units",
+        "8.54 units",
+        "9.38 units"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "8.72 units"
+    },
+    {
+      "id": "tXkGH5J4Pr6p.7.5345316906205184",
+      "question": "The elbow method in K-means clustering is commonly used to:",
+      "options": [
+        "Identify the convergence threshold",
+        "Optimize the starting centroids",
+        "Determine the ideal number of clusters",
+        "Choose the distance metric"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Determine the ideal number of clusters"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.0.6696999351484416",
+      "question": "What will be the Manhattan distance for observation (8, 8) from cluster centroid C1 in the second iteration?",
+      "options": [
+        "12",
+        "8",
+        "10",
+        "14"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "10"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.1.6176819043106816",
+      "question": "A dendrogram is used in __________ clustering to visualize the merging of clusters.",
+      "options": [
+        "Hierarchical",
+        "K-Means",
+        "DBSCAN",
+        "Spectral"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "Hierarchical"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.2.4697868638617600",
+      "question": "__________ are used to determine how distances between clusters are measured in hierarchical clustering.",
+      "options": [
+        "Partitioning methods",
+        "Linkage measures",
+        "Cross-validation",
+        "Density measures"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Linkage measures"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.3.5940535351574528",
+      "question": "Which of the following best describes the divisive hierarchical clustering method?",
+      "options": [
+        "Probabilistic",
+        "Deterministic",
+        "Stochastic",
+        "Non-parametric"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Deterministic"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.4.6576630812639232",
+      "question": "Density-based clustering methods group data points based on density, requiring that each core point's neighborhood within a specified radius contains at least a minimum number of points.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "True"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.5.5723270496649216",
+      "question": "The clustering objective function seeks to achieve which of the following?",
+      "options": [
+        "High similarity within clusters, high similarity between clusters",
+        "Low similarity within clusters, low similarity between clusters",
+        "High similarity within clusters, low similarity between clusters",
+        "Low similarity within clusters, high similarity between clusters"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "High similarity within clusters, low similarity between clusters"
+    },
+    {
+      "id": "G7eb4WKKS5ZJ.6.5707513847087104",
+      "question": "The k-modes method is a variant of k-means that is specifically used for clustering:",
+      "options": [
+        "Numerical data",
+        "Sequential data",
+        "Nominal data",
+        "Time-series data"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Nominal data"
+    }
+  ],
+  "weak10":[
+    {
+      "id": "J0JcWZ8vURFy.0.4559355842658304",
+      "question": "Which of the following describes a customer with low recency and low frequency but high monetary value?",
+      "options": [
+        "A new customer who made a single expensive purchase recently.",
+        "A long-term customer who used to spend a lot but has stopped buying.",
+        "A customer who frequently purchases but in small amounts.",
+        "A customer who buys often and recently but spends little per transaction."
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "A long-term customer who used to spend a lot but has stopped buying."
+    },
+    {
+      "id": "J0JcWZ8vURFy.1.4993335704420352",
+      "question": "To avoid data leakage, we should apply _________ on the training set and _________ on the test set using StandardScaler.",
+      "options": [
+        "fit() , fit_transform()",
+        "fit_transform(), fit_transform()",
+        "fit(), transform()",
+        "transform(), fit()"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "fit(), transform()"
+    },
+    {
+      "id": "J0JcWZ8vURFy.2.5093306436943872",
+      "question": "A customer prefers Android phones but decides to purchase an iPhone just because it offers the best features in the current market. This customer is an example of:",
+      "options": [
+        "True Friends",
+        "Barnacles",
+        "Butterflies",
+        "Strangers"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Butterflies"
+    },
+    {
+      "id": "J0JcWZ8vURFy.3.5734272835518464",
+      "question": "Which of the following best describes how RFM analysis contributes to predicting Customer Lifetime Value (CLV)?",
+      "options": [
+        "CLV is determined solely by Frequency, as frequent buyers generate the most revenue",
+        "Only Recency and Frequency matter, as the amount spent is irrelevant in CLV\nprediction.",
+        "RFM helps estimate CLV by assessing customer engagement, spending behavior, and\nlikelihood of future purchases.",
+        "Monetary Value alone is the best predictor of CLV, as higher spenders always have a higher lifetime value."
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "RFM helps estimate CLV by assessing customer engagement, spending behavior, and\nlikelihood of future purchases."
+    },
+    {
+      "id": "J0JcWZ8vURFy.4.6748933919866880",
+      "question": "A company selling high-end luxury goods wants to optimize its customer segmentation strategy. They decide to assign higher weight to customers who spend the most money, as they contribute more revenue. Which RFM factor is likely given the highest weight in their segmentation?",
+      "options": [
+        "Recency",
+        "Frequency",
+        "Monetary Value",
+        "All three must be equal"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Monetary Value"
+    },
+    {
+      "id": "J0JcWZ8vURFy.5.5234583992270848",
+      "question": "A data scientist applies K-Means clustering in Python to segment customers based on\ntheir purchase behavior. To understand the characteristics of each cluster, such as the\naverage spending pattern of customers in each group, which method should they use?",
+      "options": [
+        "model.labels_",
+        "model.cluster_centers_",
+        "model.fit_predict(data)",
+        "model.predict(data)"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "model.cluster_centers_"
+    },
+    {
+      "id": "J0JcWZ8vURFy.6.6471444135936000",
+      "question": "Which of the following is true about the elbow method in K-Means clustering?",
+      "options": [
+        "The elbow point represents the highest number of clusters possible",
+        "The inertia value increases as the number of clusters increases",
+        "The elbow point is the cluster with the lowest variance",
+        "The elbow point is where the rate of decrease in inertia slows significantly"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "The elbow point is where the rate of decrease in inertia slows significantly"
+    },
+    {
+      "id": "J0JcWZ8vURFy.7.6185061462835200",
+      "question": "Which of the following is NOT a common method for selecting the number of clusters in\na dataset?",
+      "options": [
+        "Elbow Method",
+        "Calinski-Harabasz Index",
+        "Silhouette Coefficient",
+        "Principal Component Analysis (PCA)"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Principal Component Analysis (PCA)"
+    },
+    {
+      "id": "J0JcWZ8vURFy.8.6036123942387712",
+      "question": "Which of the following is the best approach when choosing weights for RFM scoring?",
+      "options": [
+        "Using a predefined formula without adjusting for business goals",
+        "Assigning weights based on what maximizes customer retention and revenue",
+        "Keeping all three factors equal regardless of business context",
+        "Ignoring Monetary (M) since spending doesn’t predict future behavior"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Assigning weights based on what maximizes customer retention and revenue"
+    },
+    {
+      "id": "J0JcWZ8vURFy.9.6669276646211584",
+      "question": "How does NTILE() differ from RANK() in SQL?",
+      "options": [
+        "NTILE() assigns equal-sized groups, while RANK() assigns unique ranks based on values.",
+        "Both functions perform the same role in SQL.",
+        "NTILE() ranks values based on total sum, while RANK() divides data into quantiles.",
+        "NTILE() is only used for Monetary (M) in RFM analysis."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "NTILE() assigns equal-sized groups, while RANK() assigns unique ranks based on values."
+    },
+    {
+      "id": "J0JcWZ8vURFy.10.4953881463750656",
+      "question": "Which of the following clustering algorithms is better suited than K-Means for handling\nnoise and outliers?",
+      "options": [
+        "K-Means",
+        "DBSCAN",
+        "K-Medoids",
+        "Both b and c"
+      ],
+      "correctAnswerIndex": 3,
+      "correctAnswerText": "Both b and c"
+    },
+    {
+      "id": "J0JcWZ8vURFy.11.6094352357523456",
+      "question": "K-Means clustering minimizes _________ to improve cluster assignment accuracy.",
+      "options": [
+        "Silhouette score",
+        "Sum of Squared Errors (SSE)",
+        "Euclidean distance between all points",
+        "Inter-cluster distance"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Sum of Squared Errors (SSE)"
+    },
+    {
+      "id": "J0JcWZ8vURFy.12.6031327294390272",
+      "question": "Which of the following correctly counts the number of missing values in a Pandas DataFrame or Series?",
+      "options": [
+        "data.isnull().sum()",
+        "np.count_nonzero(pd.isnull(data))",
+        "Both (a) and (b)",
+        "None of the above"
+      ],
+      "correctAnswerIndex": 2,
+      "correctAnswerText": "Both (a) and (b)"
+    },
+    {
+      "id": "J0JcWZ8vURFy.13.6719191002906624",
+      "question": "In K-Means clustering, what does the n_init parameter control?",
+      "options": [
+        "The number of times the algorithm is run with different initial centroids.",
+        "The number of clusters generated in each iteration.",
+        "The number of iterations before stopping the algorithm.",
+        "The number of data points assigned to each cluster."
+      ],
+      "correctAnswerIndex": 0,
+      "correctAnswerText": "The number of times the algorithm is run with different initial centroids."
+    },
+    {
+      "id": "J0JcWZ8vURFy.14.5356174541586432",
+      "question": "StandardScaler transforms data by subtracting the _______ and dividing by the\n________, resulting in a transformed dataset with a mean of 0 and a standard deviation of\n1.",
+      "options": [
+        "Minimum, Maximum",
+        "Mean, Standard Deviation",
+        "Median, Interquartile Range",
+        "Variance, Range"
+      ],
+      "correctAnswerIndex": 1,
+      "correctAnswerText": "Mean, Standard Deviation"
+    }
+  ]
+}

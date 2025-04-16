@@ -1,24 +1,51 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import HomeScreen from './components/HomeScreen';
+import WeekMode from './components/WeekMode';
 
 function App() {
+  const [questions, setQuestions] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch questions from JSON file
+    fetch('/questions.json')
+      .then(response => response.json())
+      .then(data => {
+        setQuestions(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading questions:', error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="app">
+        <div className="loading-container">Loading...</div>
+        <footer className="footer">
+          Developed by <a href="https://jithin.tech" target="_blank" rel="noopener noreferrer">Jithin SP</a>
+        </footer>
+      </div>
+    );
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<HomeScreen questions={questions} />} />
+          <Route path="/week/:weekId/:mode" element={<WeekMode questions={questions} />} />
+          <Route path="/practice-all/:mode" element={<WeekMode questions={questions} isAllWeeks={true} />} />
+        </Routes>
+        <footer className="footer">
+          Developed by <a href="https://jithin.tech" target="_blank" rel="noopener noreferrer">Jithin SP</a>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
