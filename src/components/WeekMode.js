@@ -218,6 +218,16 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
   
   return (
     <div className="flashcard-container fade-in">
+      <div className="home-button-container">
+        <button 
+          className="icon-button home-button" 
+          onClick={handleBackToHome}
+          aria-label="Back to Home"
+        >
+          🏠
+        </button>
+      </div>
+      
       <div className="progress-text">
         Question {currentIndex + 1} of {currentQuestions.length}
         {questionProgress && (
@@ -238,6 +248,12 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
         ></div>
       </div>
       
+      <div className="swipe-navigation-text">
+        <span>Previous</span>
+        <span>← swipe →</span>
+        <span>Next</span>
+      </div>
+      
       <div className="flashcard-wrapper">
         <Flashcard 
           question={currentQuestion}
@@ -250,31 +266,23 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
         />
       </div>
       
-      <div className="controls">
+      <div className="floating-controls">
         <button 
-          className="nav-button" 
+          className="floating-button prev-button" 
           onClick={handlePrevious}
           disabled={currentIndex === 0}
         >
-          Previous
+          ◀ Previous
         </button>
         
         <button 
-          className="nav-button" 
+          className="floating-button next-button" 
           onClick={handleNext}
           disabled={mode !== 'learn' && userAnswers[currentIndex] === null}
         >
-          Next
+          Next ▶
         </button>
       </div>
-      
-      <button 
-        className="nav-button" 
-        onClick={handleBackToHome}
-        style={{ marginTop: '1rem' }}
-      >
-        Back to Home
-      </button>
     </div>
   );
 };

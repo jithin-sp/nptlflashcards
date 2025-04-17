@@ -7,7 +7,7 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
   const [swiping, setSwiping] = useState(false);
   const [swipeDirection, setSwipeDirection] = useState(null);
   const [swipeOffset, setSwipeOffset] = useState(0);
-  const [showSwipeHint, setShowSwipeHint] = useState(true);
+  const [animationClass, setAnimationClass] = useState('');
   const cardRef = useRef(null);
   
   // Min swipe distance (in px) to trigger navigation
@@ -49,19 +49,26 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
       }
     }
     
+    // Set entrance animation based on swipe direction
+    if (swipeDirection === 'left') {
+      setAnimationClass('slide-in-right');
+    } else if (swipeDirection === 'right') {
+      setAnimationClass('slide-in-left');
+    } else {
+      setAnimationClass('');
+    }
+    
     // Reset swipe animation state when question changes
     setSwipeOffset(0);
-    setSwipeDirection(null);
     setSwiping(false);
     
-    // Show swipe hint for a moment when a new card appears
-    setShowSwipeHint(true);
+    // Clear animation class after animation completes
     const timer = setTimeout(() => {
-      setShowSwipeHint(false);
-    }, 2000);
+      setAnimationClass('');
+    }, 300);
     
     return () => clearTimeout(timer);
-  }, [question, shuffleOptions]);
+  }, [question, shuffleOptions, swipeDirection]);
   
   // Convert from shuffled index to original index
   const getOriginalIndex = (shuffledIndex) => {
@@ -139,24 +146,22 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
     // Process swipe if minimum distance achieved
     if (Math.abs(distance) >= minSwipeDistance) {
       if (distance > 0 && onSwipeRight) {
-        // Animate card off screen to the right
-        setSwipeOffset(window.innerWidth);
+        // Set exit animation
+        setAnimationClass('slide-out-right');
         setTimeout(() => {
           onSwipeRight();
-          setSwipeOffset(0);
         }, 300);
       } else if (distance < 0 && onSwipeLeft) {
-        // Animate card off screen to the left
-        setSwipeOffset(-window.innerWidth);
+        // Set exit animation
+        setAnimationClass('slide-out-left');
         setTimeout(() => {
           onSwipeLeft();
-          setSwipeOffset(0);
         }, 300);
       }
     } else {
       // Reset if not swiped far enough
       setSwipeOffset(0);
-      setTimeout(() => setSwipeDirection(null), 300);
+      setAnimationClass('');
     }
     
     setSwiping(false);
@@ -164,55 +169,31 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
     setTouchEnd(null);
   };
   
-  // Calculate animation styles
+  // Calculate animation styles for active swiping
   const getCardStyle = () => {
-    // During active swipe
-    if (swiping) {
+    // Only apply manual transform during active swiping
+    if (swiping && swipeOffset !== 0) {
       return {
         transform: `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)`,
         transition: 'none'
       };
     }
     
-    // Returning to center or animating off screen
-    if (swipeOffset !== 0) {
-      return {
-        transform: `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)`,
-        transition: 'transform 0.3s ease-out'
-      };
-    }
-    
-    // Default state
-    return { transform: 'translateX(0) rotate(0)', transition: 'transform 0.3s ease-out' };
+    // For entrance/exit animations, let CSS classes handle it
+    return {};
   };
   
   if (!question) return null;
   
   return (
     <div 
-      className={`flashcard fade-in${swiping ? ' swiping' : ''}`}
+      className={`flashcard fade-in ${animationClass} ${swiping ? 'swiping' : ''}`}
       ref={cardRef}
       style={getCardStyle()}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Left swipe indicator */}
-      <div 
-        className={`swipe-indicator left${swipeDirection === 'left' ? ' active' : ''}${showSwipeHint ? ' hint' : ''}`}
-      >
-        <div className="arrow-icon">→</div>
-        <span className="swipe-text">Next</span>
-      </div>
-      
-      {/* Right swipe indicator */}
-      <div 
-        className={`swipe-indicator right${swipeDirection === 'right' ? ' active' : ''}${showSwipeHint ? ' hint' : ''}`}
-      >
-        <span className="swipe-text">Previous</span>
-        <div className="arrow-icon">←</div>
-      </div>
-      
       <div className="question">{question.question}</div>
       
       <div className="options">

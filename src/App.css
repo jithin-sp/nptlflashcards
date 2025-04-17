@@ -168,6 +168,8 @@ body {
   border-radius: 0px;
   box-shadow: var(--box-shadow);
   min-height: 70vh;
+  position: relative;
+  padding-bottom: 80px;
 }
 
 .flashcard-wrapper {
@@ -176,6 +178,7 @@ body {
   border-radius: 0px;
   box-shadow: var(--box-shadow);
   min-height: 60vh;
+  margin-bottom: 80px;
 }
 
 .flashcard {
@@ -391,7 +394,6 @@ body {
   font-weight: bold;
   text-align: center;
   box-shadow: var(--box-shadow);
-  animation: pulse 2s infinite;
 }
 
 /* Responsive adjustments */
@@ -410,6 +412,17 @@ body {
   
   .app-title {
     font-size: 1.7rem;
+  }
+  
+  .floating-controls {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+  
+  .floating-button {
+    min-width: 100px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 }
 
@@ -506,4 +519,165 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Swipe navigation text */
+.swipe-navigation-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.swipe-navigation-text span:nth-child(2) {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+/* Animation for card enter/exit */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.flashcard.slide-in-right {
+  animation: slideInFromRight 0.3s forwards;
+}
+
+.flashcard.slide-in-left {
+  animation: slideInFromLeft 0.3s forwards;
+}
+
+.flashcard.slide-out-left {
+  animation: slideOutToLeft 0.3s forwards;
+}
+
+.flashcard.slide-out-right {
+  animation: slideOutToRight 0.3s forwards;
+}
+
+/* Floating controls */
+.floating-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 20px;
+  z-index: 100;
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
+.floating-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+}
+
+.floating-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.floating-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.floating-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.prev-button {
+  background-color: var(--primary-dark);
+}
+
+.next-button {
+  background-color: var(--primary-color);
+}
+
+/* Home button */
+.home-button-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+}
+
+.icon-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bg-white);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-button {
+  background-color: var(--bg-white);
+  color: var(--primary-color);
 }
