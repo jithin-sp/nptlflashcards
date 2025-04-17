@@ -68,7 +68,10 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions 
   // Handle option click
   const handleOptionClick = (index) => {
     if (userAnswer !== null && mode !== 'learn') return; // Prevent changing answer
-    onAnswerSelect(index);
+    
+    // Pass both the selected UI index and the original index for accurate scoring
+    const originalIndex = getOriginalIndex(index);
+    onAnswerSelect(index, originalIndex);
   };
   
   if (!question) return null;

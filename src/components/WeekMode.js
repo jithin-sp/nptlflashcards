@@ -95,9 +95,18 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
   };
   
   // Handle user answer selection
-  const handleAnswerSelect = (selectedIndex) => {
+  const handleAnswerSelect = (selectedIndex, originalIndex) => {
     const currentQuestion = currentQuestions[currentIndex];
-    const isCorrect = selectedIndex === currentQuestion.correctAnswerIndex;
+    
+    // Determine if the answer is correct
+    let isCorrect;
+    if (mode === 'shuffle' && originalIndex !== undefined) {
+      // In shuffle mode, use the original index (before shuffling) to check correctness
+      isCorrect = originalIndex === currentQuestion.correctAnswerIndex;
+    } else {
+      // In regular mode, just use the selected index
+      isCorrect = selectedIndex === currentQuestion.correctAnswerIndex;
+    }
     
     // Update answers and score
     const newUserAnswers = [...userAnswers];
