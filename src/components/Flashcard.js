@@ -1,17 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions, onSwipeLeft, onSwipeRight }) => {
+const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions }) => {
   const [options, setOptions] = useState([]);
-  const [touchStart, setTouchStart] = useState(null);
-  const [touchEnd, setTouchEnd] = useState(null);
-  const [swiping, setSwiping] = useState(false);
-  const [swipeDirection, setSwipeDirection] = useState(null);
-  const [swipeOffset, setSwipeOffset] = useState(0);
-  const [animationClass, setAnimationClass] = useState('');
-  const cardRef = useRef(null);
-  
-  // Min swipe distance (in px) to trigger navigation
-  const minSwipeDistance = 100;
+  const [optionIndices, setOptionIndices] = useState([]);
   
   // Shuffle function
   const shuffleArray = (array) => {
@@ -22,9 +13,6 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
     }
     return shuffled;
   };
-  
-  // Track original indices when shuffling
-  const [optionIndices, setOptionIndices] = useState([]);
   
   // Initialize or shuffle options
   useEffect(() => {
@@ -48,36 +36,11 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
         setOptionIndices([0, 1, 2, 3]);
       }
     }
-    
-    // Set entrance animation based on swipe direction
-    if (swipeDirection === 'left') {
-      setAnimationClass('slide-in-right');
-    } else if (swipeDirection === 'right') {
-      setAnimationClass('slide-in-left');
-    } else {
-      setAnimationClass('');
-    }
-    
-    // Reset swipe animation state when question changes
-    setSwipeOffset(0);
-    setSwiping(false);
-    
-    // Clear animation class after animation completes
-    const timer = setTimeout(() => {
-      setAnimationClass('');
-    }, 300);
-    
-    return () => clearTimeout(timer);
-  }, [question, shuffleOptions, swipeDirection]);
+  }, [question, shuffleOptions]);
   
   // Convert from shuffled index to original index
   const getOriginalIndex = (shuffledIndex) => {
     return optionIndices[shuffledIndex];
-  };
-  
-  // Convert from original index to shuffled index
-  const getShuffledIndex = (originalIndex) => {
-    return optionIndices.findIndex(index => index === originalIndex);
   };
   
   // Determine CSS class for options
@@ -108,92 +71,10 @@ const Flashcard = ({ question, mode, userAnswer, onAnswerSelect, shuffleOptions,
     onAnswerSelect(index);
   };
   
-  // Touch event handlers
-  const handleTouchStart = (e) => {
-    setTouchStart(e.targetTouches[0].clientX);
-    setSwiping(true);
-    setSwipeOffset(0);
-  };
-  
-  const handleTouchMove = (e) => {
-    if (!touchStart) return;
-    
-    const currentTouch = e.targetTouches[0].clientX;
-    const diff = currentTouch - touchStart;
-    
-    // Set swipe direction for visual feedback
-    setSwipeDirection(diff > 0 ? 'right' : 'left');
-    
-    // Calculate offset for animation (with some resistance)
-    const resistance = 0.4; // Lower value = more resistance
-    setSwipeOffset(diff * resistance);
-    
-    // Prevent default to avoid scroll during swipe
-    if (Math.abs(diff) > 20) {
-      e.preventDefault();
-    }
-  };
-  
-  const handleTouchEnd = (e) => {
-    if (!touchStart) return;
-    
-    const end = e.changedTouches[0].clientX;
-    setTouchEnd(end);
-    
-    // Calculate swipe distance
-    const distance = end - touchStart;
-    
-    // Process swipe if minimum distance achieved
-    if (Math.abs(distance) >= minSwipeDistance) {
-      if (distance > 0 && onSwipeRight) {
-        // Set exit animation
-        setAnimationClass('slide-out-right');
-        setTimeout(() => {
-          onSwipeRight();
-        }, 300);
-      } else if (distance < 0 && onSwipeLeft) {
-        // Set exit animation
-        setAnimationClass('slide-out-left');
-        setTimeout(() => {
-          onSwipeLeft();
-        }, 300);
-      }
-    } else {
-      // Reset if not swiped far enough
-      setSwipeOffset(0);
-      setAnimationClass('');
-    }
-    
-    setSwiping(false);
-    setTouchStart(null);
-    setTouchEnd(null);
-  };
-  
-  // Calculate animation styles for active swiping
-  const getCardStyle = () => {
-    // Only apply manual transform during active swiping
-    if (swiping && swipeOffset !== 0) {
-      return {
-        transform: `translateX(${swipeOffset}px) rotate(${swipeOffset * 0.05}deg)`,
-        transition: 'none'
-      };
-    }
-    
-    // For entrance/exit animations, let CSS classes handle it
-    return {};
-  };
-  
   if (!question) return null;
   
   return (
-    <div 
-      className={`flashcard fade-in ${animationClass} ${swiping ? 'swiping' : ''}`}
-      ref={cardRef}
-      style={getCardStyle()}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
+    <div className="flashcard fade-in">
       <div className="question">{question.question}</div>
       
       <div className="options">

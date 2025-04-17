@@ -248,12 +248,6 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
         ></div>
       </div>
       
-      <div className="swipe-navigation-text">
-        <span>Previous</span>
-        <span>← swipe →</span>
-        <span>Next</span>
-      </div>
-      
       <div className="flashcard-wrapper">
         <Flashcard 
           question={currentQuestion}
@@ -261,8 +255,6 @@ const WeekMode = ({ questions, isAllWeeks = false }) => {
           userAnswer={userAnswers[currentIndex]}
           onAnswerSelect={handleAnswerSelect}
           shuffleOptions={mode === 'shuffle'}
-          onSwipeLeft={handleNext}
-          onSwipeRight={handlePrevious}
         />
       </div>
       
