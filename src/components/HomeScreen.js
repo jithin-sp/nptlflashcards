@@ -61,14 +61,7 @@ const HomeScreen = ({ questions }) => {
         </>
       ) : (
         <>
-                  <div className="practice-all-container">
-            <Link to="/practice-all/practice" className="week-button practice-all-button">
-              <div className="week-title-text">🔄 Practice All</div>
-            </Link>
-            <Link to="/practice-all/learn" className="week-button practice-all-button" style={{ marginTop: '0.5rem' }}>
-              <div className="week-title-text">📚 Learn All</div>
-            </Link>
-          </div>
+
           <div className="week-buttons">
             {weekKeys.map((weekKey, index) => {
               const stats = getWeekStats(weekKey);
@@ -92,7 +85,14 @@ const HomeScreen = ({ questions }) => {
               );
             })}
           </div>
-          
+          <div className="practice-all-container">
+            <Link to="/practice-all/practice" className="week-button practice-all-button">
+              <div className="week-title-text">🔄 Practice All</div>
+            </Link>
+            <Link to="/practice-all/learn" className="week-button practice-all-button" style={{ marginTop: '0.5rem' }}>
+              <div className="week-title-text">📚 Learn All</div>
+            </Link>
+          </div>
 
         </>
       )}
