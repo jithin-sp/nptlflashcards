@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam Time!</title>
+  <style>
+    body {
+      width: 380px;
+      height: 280px;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    h1 {
+      color: #3a4e7a;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    }
+    
+    p {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .stars {
+      font-size: 20px;
+      color: #ffd700;
+      margin: 15px 0;
+      animation: sparkle 1.5s infinite alternate;
+    }
+    
+    @keyframes sparkle {
+      from { opacity: 0.7; }
+      to { opacity: 1; text-shadow: 0 0 10px gold, 0 0 20px gold; }
+    }
+    
+    .thumbs-up {
+      font-size: 40px;
+      margin: 10px 0;
+      animation: thumbsUp 1s infinite alternate;
+    }
+    
+    @keyframes thumbsUp {
+      from { transform: scale(1); }
+      to { transform: scale(1.2); }
+    }
+    
+    button {
+      background-color: #4a73db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    button:hover {
+      background-color: #3660cb;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffd700;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>It's Time for Your Exam!</h1>
+    <div class="stars">⭐⭐⭐</div>
+    <p>All the best for your exam!</p>
+    <div class="thumbs-up">👍</div>
+    <button id="closeBtn">I Got It!</button>
+  </div>
+
+  <script>
+    // Close button functionality
+    document.getElementById('closeBtn').addEventListener('click', () => {
+      window.close();
+    });
+    
+    // Create confetti effect
+    function createConfetti() {
+      const colors = ['#ffd700', '#ff6b6b', '#4ecdc4', '#7d70ba', '#ffe66d'];
+      
+      for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.top = -Math.random() * 100 + 'px';
+        confetti.style.width = Math.random() * 8 + 5 + 'px';
+        confetti.style.height = Math.random() * 4 + 5 + 'px';
+        confetti.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+        
+        document.body.appendChild(confetti);
+        
+        animateConfetti(confetti);
+      }
+    }
+    
+    function animateConfetti(confetti) {
+      const animation = confetti.animate(
+        [
+          { transform: 'translate3d(0, 0, 0) rotate(0deg)', opacity: 1 },
+          { transform: 'translate3d(' + (Math.random() * 200 - 100) + 'px, ' + window.innerHeight + 'px, 0) rotate(' + Math.random() * 360 + 'deg)', opacity: 0 }
+        ],
+        {
+          duration: Math.random() * 3000 + 2000,
+          easing: 'cubic-bezier(0, .9, .57, 1)',
+          delay: Math.random() * 2000
+        }
+      );
+      
+      animation.onfinish = () => {
+        confetti.remove();
+      };
+    }
+    
+    // Start confetti when page loads
+    window.addEventListener('load', createConfetti);
+  </script>
+</body>
+</html> 

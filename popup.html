@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam Reminder</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: 'Arial', sans-serif;
+      padding: 15px;
+      background-color: #f5f7fa;
+    }
+    
+    h2 {
+      color: #3a4e7a;
+      font-size: 18px;
+      margin-top: 0;
+      text-align: center;
+    }
+    
+    .info {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+    }
+    
+    p {
+      color: #333;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    
+    .highlight {
+      font-weight: bold;
+      color: #4a73db;
+    }
+    
+    .status {
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+      background-color: #e8f0fe;
+    }
+  </style>
+</head>
+<body>
+  <h2>Exam Time Reminder</h2>
+  
+  <div class="info">
+    <p>This extension will show a reminder between <span class="highlight">9:45 AM</span> and <span class="highlight">10:00 AM</span> on the day of your exam.</p>
+    <p>The reminder will only be shown once per day.</p>
+  </div>
+  
+  <div class="status" id="status">
+    Reminder is active
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 
