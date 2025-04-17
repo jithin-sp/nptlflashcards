@@ -30,7 +30,6 @@ const CompletionScreen = ({ score, total, onRestart, onBackToHome, mode }) => {
   
   // Motivational quotes
   const quotes = [
-    "Memorize this faster than JARVIS crunches data — Tony Stark would approve!",
     "Let your memory be as sharp as Daredevil’s senses in Hell’s Kitchen.",
     "If Deadpool can remember all his one-liners, you can handle this material!",
     "As Yoda says: 'Memorize or do not. There is no try.'",
