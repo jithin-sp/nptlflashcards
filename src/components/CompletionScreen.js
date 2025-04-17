@@ -30,17 +30,17 @@ const CompletionScreen = ({ score, total, onRestart, onBackToHome, mode }) => {
   
   // Motivational quotes
   const quotes = [
-    "Remember everything like you're Sherlock Holmes solving a case. Your mind palace awaits!",
-    "Memorize this faster than JARVIS processes data. Tony Stark would be proud!",
-    "Your memory needs to be as sharp as Daredevil's senses in Hell's Kitchen.",
-    "Quick! Memorize this like Doctor Strange reading ancient texts before Dormammu arrives!",
-    "Use those brain cells like Captain America uses his shield – with precision and purpose!",
-    "As Yoda would say: Memorize or memorize not, there is no try.",
-    "Remember everything faster than Spider-Man's spider-sense can detect danger!",
-    "If Deadpool can remember all his one-liners, you can remember this material!",
-    "Channel your inner Black Panther and let the knowledge of Wakanda flow through you!",
-    "The Force of memory is strong with this one. Use it, young Padawan!"
+    "Memorize this faster than JARVIS crunches data — Tony Stark would approve!",
+    "Let your memory be as sharp as Daredevil’s senses in Hell’s Kitchen.",
+    "If Deadpool can remember all his one-liners, you can handle this material!",
+    "As Yoda says: 'Memorize or do not. There is no try.'",
+    "Crows can remember faces — so yeah, you’ve got no excuse.",
+    "An octopus has 9 brains. You only need one. Use it.",
+    "Elephants never forget. Be the elephant.",
+    "Dolphins call each other by name. You can at least remember a few terms.",
+    "Squirrels remember where they hide thousands of nuts. Surely you can recall this one thing!"
   ];
+  
   
   // Randomly select a quote
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
